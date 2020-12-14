@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(70487821, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/70487821" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
@@ -44,37 +59,33 @@
 
             <div class="col-4">
                 <form>
-                    <div class="form-row">
+                    <div id="test" class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputName">Имя</label>
-                            <input class="form-control" id="inputName">
+                            <input name="inputName" class="form-control" id="inputName">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputFam">Фамилия</label>
-                            <input class="form-control" id="inputFam">
+                            <input name="inputFam" class="form-control" id="inputFam">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputOtch">Отчетство</label>
-                            <input class="form-control" id="inputOtch">
+                            <input name="inputOtch" class="form-control" id="inputOtch">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputPhone">Номер телефона</label>
-                            <input class="form-control" id="inputPhone">
+                            <input name="inputPhone" class="form-control" id="inputPhone">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">Направление на котором хотите учиться </label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>Мобильная разработка</option>
-                            <option>Игры</option>
-                            <option>Сайты</option>
-                        </select>
+                        <label for="inputDirection">Направление на котором хотите учиться </label>
+                        <input name="inputDirection" class="form-control" id="inputDirection">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">О себе</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="about">О себе</label>
+                        <textarea name="about" class="form-control" id="about" rows="3"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Подать заявку</button>
                 </form>
@@ -83,4 +94,6 @@
     </div>
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="site.js"></script>
 </html>
